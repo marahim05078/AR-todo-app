@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: aquamarine;
+  border-radius: 5px;
+  /* border: 1px solid black; */
+}
+.todo {
+  width: 500px;
+  margin: 20px auto;
+  /* border: 1px solid rgb(151, 19, 19); */
+  text-align: center;
+}
+
+.todo input {
+  outline: none;
+  width: 80%;
+  padding: 5px;
+}
+.todo input:focus {
+  border: 1px solid dodgerblue;
+}
+.todo button {
+  width: 20%;
+  padding: 5px;
+}
+.todo-list {
+  margin: 0 auto;
+  width: 100%;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+.todo-list p {
+  text-align: center;
+  line-height: 25px;
+  font-size: large;
+  border-bottom: 5px solid rgb(54, 202, 212);
+  padding: 15px;
+}
+.todo-list ul {
+  width: 100%;
+  list-style: none;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+.todo-list ul li {
+  padding: 5px 0;
+  width: 100%;
+  position: relative;
+}
+.todo-list ul li:not(:last-child) {
+  border-bottom: 1px solid silver;
+}
+.todo-list ul li button {
+  width: 70px;
+}
+.todo-list ul li button:nth-child(3) {
+  position: absolute;
+  right: 70px;
+}
+.todo-list ul li button:nth-child(4) {
+  position: absolute;
+  right: 0;
+}
+.todo-list ul li input {
+  margin-right: 10px;
+}
